@@ -45,20 +45,18 @@ It provides a comprehensive view of environmental conditions in an easy-to-read 
 ---
 
 ## 🛠️ Tools Used
-- **Microsoft Power BI Desktop**  
+- **Microsoft Power BI Desktop**
+- **Microsoft Power Query**
 - Visuals included: Cards, Line Chart, Gauge, Bar Chart, and KPI Indicators  
 
 ---
 
 ## 📂 Files
+- https://www.weatherapi.com/api-explorer.aspx - Dataset
 - `AQI index.pbix` → Power BI source file  
 - `AQI-Dashboard.png` → Dashboard screenshot  
-- `AQI-Report.pdf` → (Optional) Exported report  
+- `AQI-Report.pdf` → (Optional) Exported report
 
----
+## Dashboard Preview
+<img width="1301" height="731" alt="AQI Report" src="https://github.com/user-attachments/assets/45ff8d38-fb82-4547-86c5-7fd00a237a9c" />
 
-## ▶️ How to Use
-1. Download **Power BI Desktop**.  
-2. Clone or download this project folder.  
-3. Open `AQI index.pbix` in Power BI.  
-4. Interact with the dashboard.
