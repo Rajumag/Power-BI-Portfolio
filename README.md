@@ -57,6 +57,6 @@ This repository showcases a collection of 20+ end-to-end Power BI dashboards tha
 
 ## 📬 Connect with Me
 
-Name: Raju Magubhori
-LinkedIn: https://www.linkedin.com/in/raju-m-38363a188?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bwk002cd%2BTISIzeUFXliwNg%3D%3D
-Email: magubhoriraju@gmail.com
+- Name: Raju Magubhori
+- LinkedIn: https://www.linkedin.com/in/raju-m-38363a188?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bwk002cd%2BTISIzeUFXliwNg%3D%3D
+- Email: magubhoriraju@gmail.com
