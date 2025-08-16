@@ -48,9 +48,10 @@ The dashboard aims to provide actionable insights into which employee segments a
 - Use the slicers (Gender, Overtime, Age Group, Department) to filter and analyze specific segments.
 - Explore the visuals to identify trends and correlations.
 
-## 📂 Repository Structure
+## 📂 Project Structure
 
 - Employee_Attrition_Dashboard.pbix: The main Power BI file.
+- Source File : <a href= "https://github.com/Rajumag/Power-BI-Portfolio/blob/main/Project-06%20Employee%20Churn%20Analysis/Employee%20Churn%20Analytics.xlsx"> 
 - screenshots/: <img width="1269" height="731" alt="Employee" src="https://github.com/user-attachments/assets/53654a95-b999-4ea5-9463-105dd61362d5" />
 - README.md: This file.
 
