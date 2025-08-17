@@ -88,5 +88,5 @@ The dashboard serves as a decision-support tool for hotel executives, analysts, 
 
 Hotel_Industry_Report.pbix: The main Power BI file.
 screenshots/: <img width="1059" height="736" alt="Screenshot 2025-08-17 110339" src="https://github.com/user-attachments/assets/ac4d1c5c-3d24-409c-a826-cc1a7d928020" />
-Dataset Used : 
+Dataset Used : <a "href: https://github.com/Rajumag/Power-BI-Portfolio/blob/main/Project-08%20Hotel%20Industry%20Report/Copy%20of%20Indian%20Hotel%20Master.xlsx" />
 README.md: This file.
