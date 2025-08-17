@@ -88,7 +88,7 @@ This dashboard conveys distribution of ratings and their relation to attrition, 
 ## 📂 Repository Structure
 - `HR_Analytics_Dashboard.pbix`: The main Power BI file.
 - `screenshots/`: <img width="1300" height="733" alt="Screenshot 2025-08-17 162453" src="https://github.com/user-attachments/assets/b23d09ff-f3b8-47c1-af96-6a9b67a2b158" />
-- `Dataset` : 
+- `Dataset` : Uploaded files.
 - `README.md`: This file.
 
 ## 🛠️ Requirements
