@@ -64,7 +64,7 @@ These steps ensured the data was clean, complete, and ready for accurate analysi
 
 - Inventory_Management_Report.pbix: The main Power BI file.
 - screenshots/: <img width="1225" height="734" alt="Screenshot 2025-08-19 105847" src="https://github.com/user-attachments/assets/21b88f28-b7f1-4113-a608-3fce1421fd02" />
-- DataSet Used : <a href: "https://github.com/Rajumag/Power-BI-Portfolio/blob/main/Project-10%20Inventory%20Management/Inventory%20Management%20Report.xlsx" /> 
+- DataSet Used : <a "href:https://github.com/Rajumag/Power-BI-Portfolio/blob/main/Project-10%20Inventory%20Management/Inventory%20Management%20Report.xlsx" /> 
 - README.md: This file.
 
 ## 🛠️ Requirements
