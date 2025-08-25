@@ -1,0 +1,102 @@
+# 📊 Student Performance Analysis Power BI Dashboard
+
+## 📋 Overview
+
+This repository contains a Power BI project analyzing student performance data for 10,000 students across grades 0-12. The dataset includes metrics such as student count (10K), attendance rate (87.5%), average GPA (2.99), and breakdowns by age group (5-9, 10-14, 15-17), gender (Female, Male, Other), performance level (High, Medium, Low), special needs (ADHD, Autism Spectrum, Dyslexia), economic background (High, Low, Middle Income), extracurricular activities (Art, Drama, Music), and subjects (Mathematics, Science, Languages, Sports, Arts). The project helps identify trends in academic achievement, attendance, and demographics to support educational planning and interventions.
+
+## 📈 Dashboards Included
+
+The project features three main dashboard pages, each with interactive filters for Grade, Age Group, Gender, Performance Level, Special Needs, Economic Background, and Extracurricular Activities.
+
+### 1. 🎯 Student Performance Analysis Dashboard
+This page provides an overview of key metrics and performance trends. It includes:
+- **Key Metrics**
+  - Student Count: 10K
+  - Attendance Rate%: 87.5%
+  - Avg GPA: 2.99
+- **Interactive Filters**
+  - Grade (0-12), Age Group (5-9, 10-14, 15-17), Gender (Female, Male, Other), Performance Level (High, Low, Medium), Special Needs (ADHD, Autism Spectrum, Dyslexia), Extracurricular Activities (Art, Drama, Music), Economic Background (High Income, Low Income, Middle Income).
+- **Visuals**
+  - Bubble Chart: Performance Metrics by Subject Strengths (e.g., Mathematics 3.00, Science 2.99, Languages 2.98, Sports 0.875, Arts 0.870), sized by GPA.
+  - Bar Chart: Academic Performance by Age (e.g., 5-9: 3.9K, 10-14: 3.8K, 15-17: 2.3K), showing declining performance with age.
+  - Line Chart: Gender-Based Academic Performance (Male 3.000, Female 2.990, Other 2.895), indicating slight variations.
+  - Clustered Column Chart: Grade-Based Student Achievement Insights (e.g., Grade 0: 2.999 Student Count with 3.000 GPA, peaking at Grade 4-5 then declining to Grade 12 at 2.966).
+  - Text Boxes: Insights like "At 3889, 5-9 had the highest Student_Count and was 66.20% higher than 15-17, which had the lowest Student_Count at 2340." and correlations between count and GPA.
+
+This dashboard conveys performance correlations with demographics and subjects, highlighting areas for targeted support.
+
+### 2. 📊 Student Details Dashboard
+This page lists individual student records with summary metrics. It includes:
+- **Key Metrics**
+  - Student Count: 5025 (filtered view)
+  - Attendance Rate%: 87.6%
+  - Avg GPA: 2.99
+- **Interactive Filters**
+  - Same as Performance Analysis: Grade, Age Group, Gender, etc.
+- **Visuals**
+  - Table: Student details (e.g., Aaina Arora: Other Gender, Grade 3, High Performance, Hindi Proficiency, Mathematics Strengths, Arts Weaknesses, Bansal Setty and Kakar School, 0.94 Attendance, 3.63 GPA; sorted by GPA or name).
+
+This dashboard conveys granular student data for detailed reviews, enabling personalized tracking.
+
+### 3. 📊 Demographics Dashboard
+This page focuses on demographic distributions and geographic insights. It includes:
+- **Key Metrics**
+  - Student Count: 10K
+  - Attendance Rate%: 87.5%
+  - Avg GPA: 2.99
+- **Interactive Filters**
+  - Same as previous dashboards.
+- **Visuals**
+  - Clustered Column Chart: Student Count by Quarter and Economic Background (QTR 1: High Income 636, Low Income 115, Middle Income 3321; showing Middle Income dominant at 3321 in QTR 1, declining quarterly).
+  - Map: Student locations (e.g., pins in New Delhi, Mumbai, Bangkok, Singapore, Jakarta, with clusters in India and Asia), visualizing geographic spread.
+
+This dashboard conveys socioeconomic and regional trends, aiding in resource allocation.
+
+## ✨ Key Features
+- **Interactive Filters**: Slicers for Grade, Age Group, Gender, Performance Level, Special Needs, Economic Background, and Extracurricular Activities allow dynamic data exploration across all pages.
+- **Dynamic Visuals**: Charts and tables update based on filters, providing flexible analysis (e.g., GPA by gender and special needs).
+- **Data Source**: Excel file ("Student Performance Tracking.xlsx") with Sheet1 containing 10,001 rows (including header) of student data.
+- **Visual Consistency**: Light blue theme with rounded buttons and colorful charts for intuitive navigation.
+
+## 🧹 Data Cleaning and Integrity Processes
+The dataset from "Student Performance Tracking.xlsx" (Sheet1 with 10,001 rows including header) was cleaned in Power BI's Power Query Editor:
+- **Header Assignment**: Promoted the first row as column headers for fields like StudentID, FullName, Age, Gender, GradeLevel, SchoolName, EnrollmentDate, AttendanceRate, GPA, SubjectStrengths, SubjectWeaknesses, ExtracurricularActivities, ParentGuardianName, ParentGuardianContact, EconomicBackground, LanguageProficiency, SpecialNeeds, Location, City, State.
+- **Duplicate Removal**: Removed duplicates based on StudentID to ensure unique records, maintaining 10,000 students.
+- **Null Value Handling**: Filled null SpecialNeeds with "None", null ExtracurricularActivities with "None"; removed rows with null GPA or AttendanceRate; imputed null Age with median (11).
+- **Data Type Conversions**: Converted EnrollmentDate to Date (from numeric like 45126), AttendanceRate to Percentage, GPA to Decimal (2 decimal places), Age/GradeLevel to Whole Number; categorical fields (Gender, EconomicBackground) to Text.
+- **Outlier Detection and Correction**: Flagged invalid GPA (>4.0 or <0) and capped at 4.0/0; ensured AttendanceRate within 0-100%, correcting outliers; standardized SpecialNeeds (e.g., "None" for empty).
+- **Text Normalization**: Trimmed whitespace, converted names to proper case (e.g., "zara sura" to "Zara Sura"), split Location into City/State if needed; fixed inconsistencies like repeated "City, State" in columns.
+- **Integrity Validation**: Verified totals (e.g., sum Student Count = 10K, avg GPA 2.99), ensured no data loss (row count checks), cross-referenced distributions (e.g., age groups sum to total).
+
+These steps ensured accurate, complete data for reliable insights.
+
+## 💡 Key Insights Derived from the Dashboards
+- **Performance Trends**: Avg GPA 2.99, with 5-9 age group highest at 3.9K students and 3.00 GPA, declining to 2.3K students and 2.982 GPA in 15-17, indicating younger students perform better.
+- **Subject Strengths**: Mathematics leads (3.00), Science 2.99, Languages 2.98; Arts and Sports lower (0.87-0.875), suggesting STEM focus but arts/sports gaps.
+- **Gender Variations**: Males slightly higher GPA (3.000) than Females (2.990) and Others (2.895), with positive count-GPA correlation (38.89% of count explains GPA variance).
+- **Grade Insights**: Grade 0-2 high achievement (2.999-3.026 GPA), peaking at Grade 4 (3.004), then declining to Grade 12 (2.966); 5-9 group 66.20% higher count than 15-17.
+- **Demographics**: Middle Income dominates (3321 in QTR 1), Low Income lowest (115); Asia-heavy locations (New Delhi, Mumbai, Bangkok), with clusters in India.
+- **Special Needs/Activities**: Filters show impacts, e.g., Dyslexia linked to lower Languages proficiency; Music/Drama popular in Middle Income.
+
+## 📖 How to Use
+1. Download the `.pbix` file from this repository.
+2. Open in Power BI Desktop (free download from Microsoft).
+3. Refresh data if connecting to a live source.
+4. Use slicers (e.g., select "Female" and "ADHD") to filter visuals.
+5. Navigate between pages using tabs for performance, details, and demographics.
+
+## 📂 Repository Structure
+- `Student_Performance_Analysis.pbix`: The main Power BI file.
+- `screenshots/`: <img width="1076" height="721" alt="Screenshot 2025-08-25 140224" src="https://github.com/user-attachments/assets/f40c9094-30be-40b9-af18-edd559707e44" />
+-`Source Data` : Attached excel file.
+- `README.md`: This file.
+
+## 🛠️ Requirements
+- Power BI Desktop (version 2.0 or later recommended).
+- No additional dependencies; all DAX measures and visuals are built-in.
+
+## 🤝 Contributions
+Feel free to fork and suggest improvements, such as adding more DAX calculations or advanced visuals.
+
+## 📜 License
+MIT License - Free to use and modify for personal or commercial purposes.
